@@ -8,22 +8,31 @@ export default class App extends Component{
   	super(props);
 
   	this.state = {
-  	  todo: ""
+  	  todo: "",
+  	  todoArray: []
   	}
   	this.handleChange = this.handleChange.bind(this);
+  	this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange(e) {
+   e.preventDefault();
     this.setState({
       todo: e.target.value
     });
-    console.log(e.target.value);
   }
 
   handleClick(e) {
-    e.preventDefault();
-    console.log('The link was clicked.');
+  	let todos = [];
+  	todos.push(this.state.todo);
+  	console.log(todos, 'array');
+
+  	this.setState({
+      todoArray: todos
+  	})
+    console.log(this.state.todoArray, 'state');
   }
+
 
   render(){
     return(
