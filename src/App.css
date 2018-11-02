@@ -1,4 +1,38 @@
-.App {
+.heading {
   margin: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: courier new;
+  color: blue;
+   margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.inputField {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 17px;
+  font-family: courier new;  
+  text-align: center;
+  width: 30%;
+}
+
+.todo {
+  font-size: 18px;
+  font-family: Courier new;
+ margin: auto;
+    width: 40%;
+}
+.button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+.button {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: transparent;
+  font-family: courier new;
+}
+
+.input {
+	 margin: auto;
+    text-align: center;
 }
